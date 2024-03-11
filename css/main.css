@@ -258,6 +258,11 @@ body{
 }
 .creators__item-img{
   display: inline-block;
+  transition:  0.3s ease;
+}
+.creators__item:hover .creators__item-img{
+  transform: translateY(-15px);
+  /* transform: rotate(40deg); */
 }
 .creators__item-text{
   color: rgb(112, 112, 112);
@@ -417,7 +422,7 @@ body{
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 180px;
+  padding-bottom: 130px;
 }
 .subscribes__wrap{
   display: flex;
@@ -431,6 +436,11 @@ padding: 33px 0 0 45px;
 width: 550px;
 height: 480px;
 background: rgb(13, 13, 13);
+transition:  0.3s ease;
+}
+.subscribes__left:hover{
+transform:  rotate(4deg);
+box-shadow: rgba(241, 239, 239, 0.62) 0px 2px 4px, rgba(240, 237, 237, 0.652) 0px 7px 13px -3px, rgba(230, 227, 227, 0.611) 0px -3px 0px inset;
 }
 .subscribers__left-img{
   display: inline-block;
@@ -444,6 +454,11 @@ background: rgb(13, 13, 13);
   height: 480px;
   background: rgb(13, 13, 13);
   z-index: 11111;
+  transition:  0.3s ease;
+}
+.subscribes__right:hover{
+  transform:  rotate(-4deg);
+  box-shadow: rgba(241, 239, 239, 0.62) 0px 2px 4px, rgba(240, 237, 237, 0.652) 0px 7px 13px -3px, rgba(230, 227, 227, 0.611) 0px -3px 0px inset;
 }
 .subscribes__span{
   color: rgb(15, 198, 92);
@@ -483,7 +498,7 @@ background: rgb(13, 13, 13);
   line-height: 25px;
   border-radius: 10px;
   transition:  0.3s ease;
-
+  margin-top: 30px;
 }
 .subscribes__link:hover{
   box-shadow: rgba(241, 239, 239, 0.62) 0px 2px 4px, rgba(240, 237, 237, 0.652) 0px 7px 13px -3px, rgba(230, 227, 227, 0.611) 0px -3px 0px inset;
@@ -612,6 +627,10 @@ background: rgb(13, 13, 13);
 .expertes__img{
   margin-top: 20px;
   width: 100%;
+  transition:  0.3s ease;
+}
+.expertes__img:hover{
+  box-shadow: rgba(241, 239, 239, 0.62) 0px 2px 4px, rgba(240, 237, 237, 0.652) 0px 7px 13px -3px, rgba(230, 227, 227, 0.611) 0px -3px 0px inset;
 }
 
 /* expertes style end */
@@ -649,6 +668,11 @@ background: rgb(13, 13, 13);
 }
 .started__logo-img{
 margin-bottom: 28px;
+transition:  0.3s ease;
+}
+.started__logo-img:hover{
+  transform: scale(1.2);
+  box-shadow: rgba(238, 231, 231, 0.884) 0px 25px 20px -20px;
 }
 .started__title{
   color: rgb(255, 255, 255);
@@ -741,9 +765,7 @@ margin-bottom: 28px;
 }
 
 .footer__item-link:hover{
+  transform: translateX(5px);
   color: rgb(50, 109, 249);
 }
-
-
-
 /* Footer style end  */
